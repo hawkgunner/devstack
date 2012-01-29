@@ -195,7 +195,7 @@ if [[ -e ~/.ssh/id_rsa.pub ]]; then
     cat >> $vm_dir/uec/user-data<<EOF
 mkdir -p /opt/stack
 if [ ! -d /opt/stack/devstack ]; then
-    git clone https://github.com/cloudbuilders/devstack.git /opt/stack/devstack
+    git clone http://github.com/cloudbuilders/devstack.git /opt/stack/devstack
     cd /opt/stack/devstack
     cat > localrc <<LOCAL_EOF
 ROOTSLEEP=0
